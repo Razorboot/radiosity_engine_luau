@@ -1,6 +1,6 @@
 ![radiosity_engine_thumbnail (2)](https://github.com/user-attachments/assets/799b9deb-e56b-40b9-852b-b8c26359568b)
 
-## Notice
+> ## Notice
 ---
 This is a WIP experimental lighting framework that takes full advantage of Roblox's Editable Image instance. This means lighting is calculated separately from Roblox's in-house lighting engine by using a light transport simulation. As a result, you can use this engine to add to Roblox's existing lighting, or render a scene using only baked lighting! Changes are still being made to Editable Image, so expect updates as Roblox rolls out the feature!
 
