@@ -6,7 +6,7 @@ This is a WIP experimental lighting framework that takes full advantage of Roblo
 
 ---
 
-> ****Introduction****
+> **Introduction**
 
 A year ago I released a custom lighting framework that pre-renders the lighting in your experience. Since then, Roblox has implemented changes to Parallel Luau and added support for low-level image manipulation that enables many improvements in rendering times, performance, and most importantly, quality. This post details a complete rewrite of my lighting framework.
 
