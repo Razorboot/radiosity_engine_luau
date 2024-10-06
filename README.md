@@ -143,12 +143,12 @@ Now that the rendering setup is complete, we can begin baking. Radiosity Engine 
 ```lua
 for canvasIndex, canvas in pairs(MyRadiosityManager.Canvases) do
 	canvas:prepareRender() -- Required before rendering.
-
+	
 	task.wait()
-
+	
 	for _, BroadPatch in pairs(canvas.BroadSurfacePatches) do
 		-- OPTIONAL: task.defer allows multiple patches to be rendered at once, heavy performance impact but viable for simple scenes.
-
+	
 		--task.defer(function()
 		for xPixel = 0, MyRadiosityManager.NarrowSurfacePatchScale - 1 do
 			workers[xPixel + 1]:SendMessage(
@@ -156,7 +156,7 @@ for canvasIndex, canvas in pairs(MyRadiosityManager.Canvases) do
 			)
 		end
 		--end)
-
+	
 		task.wait()
 	end
 end
