@@ -56,20 +56,20 @@ Learn how to add parts to render and lights to influence your scene.
 Before baking anything, you need to include all the parts you want to render. Because Radiosity renders lighting on individual surfaces of parts, you need to apply lightmaps to the specific surfaces of each part you want to render.
 
 You can apply a lightmap to all surfaces of a part with:
-```
+```lua
 MyRadiosityManager:createCanvasOnAllSurfaces( part: BasePart )
 ```
 You can apply a lightmap to a specific surface of a part with:
-```
+```lua
 Manager:createCanvas( part: BasePart, surface: Enum.NormalId )
 ```
 Optionally, you can toggle local lighting and add local light sources to a Radiosity Manager:
-```
+```lua
 MyRadiosityManager.BakeLocalLights = true
 MyRadiosityManager:insertLight( light: Light )
 ```
 You can toggle Global Lighting with:
-```
+```lua
 MyRadiosityManager.BakeGlobalLights = false
 ```
 ❗Keep in mind that lights behave differently than in Roblox's default lighting engine. ``Brightness`` is ignored and light use a physically-accurate quadratic falloff. 
@@ -129,18 +129,18 @@ After you've prepared the lighting information for your scene, you're ready to b
 
 Before baking, lighting information needs to be updated and render workers need to be instantiated. These workers are Lua actors which work on rendering multiple pixels on the lightmap at once. The number of actors is based on the resolution of the lightmap, which I'll cover later.
 You can prepare lighting information and render workers using:
-```
+```lua
 MyRadiosityManager:prepareLights()
 local workers = MyRadiosityManager:prepareRenderWorkers()
-```
+```lua
 You also need to update the current Radiosity Manager before rendering:
-```
+```lua
 MyRadiosityManager:updateRenderVars()
 ```
 Now that the rendering setup is complete, we can begin baking. Radiosity Engine stores lighting information by creating a SurfaceGui for each surface in the Radiosity Manager. These SurfaceGuis are part of a special class called a ``"Canvas"``, which contains essential information about the surface to bake. Each Canvas is then split up into ImageLabels called ``"BroadSurfacePatches"``. The engine then divides each patch into pixels which are stored in an EditableImage called the ``"NarrowSurfacePatch"``. You can assign a render worker to a pixel on each patch to calculate lighting information in parallel.
 
-``RadiosityEngineManager:renderPatch(...)`` allows you to render lighting for a specific patch. Because Radiosity Engine is designed for parallel Luau, you need to pass information to workers for rendering. The snippet below scans through each broad surface patch of every canvas, renders that patch with a render worker, and then repeats the process until rendering is complete.
-```
+``lua RadiosityEngineManager:renderPatch(...)`` allows you to render lighting for a specific patch. Because Radiosity Engine is designed for parallel Luau, you need to pass information to workers for rendering. The snippet below scans through each broad surface patch of every canvas, renders that patch with a render worker, and then repeats the process until rendering is complete.
+```lua
 for canvasIndex, canvas in pairs(MyRadiosityManager.Canvases) do
 	canvas:prepareRender() -- Required before rendering.
 
