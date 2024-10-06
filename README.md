@@ -132,7 +132,7 @@ You can prepare lighting information and render workers using:
 ```lua
 MyRadiosityManager:prepareLights()
 local workers = MyRadiosityManager:prepareRenderWorkers()
-```lua
+```
 You also need to update the current Radiosity Manager before rendering:
 ```lua
 MyRadiosityManager:updateRenderVars()
