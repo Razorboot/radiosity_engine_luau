@@ -1,6 +1,6 @@
 ![radiosity_engine_thumbnail (2)](https://github.com/user-attachments/assets/799b9deb-e56b-40b9-852b-b8c26359568b)
 
-❗NOTICE
+##❗Notice
 ---
 This is a WIP experimental lighting framework that takes full advantage of Roblox's Editable Image instance. This means lighting is calculated separately from Roblox's in-house lighting engine by using a light transport simulation. As a result, you can use this engine to add to Roblox's existing lighting, or render a scene using only baked lighting! Changes are still being made to Editable Image, so expect updates as Roblox rolls out the feature!
 
@@ -30,7 +30,7 @@ There are also a few limitations to keep in mind, which I will explain in depth 
 
 ---
 
-> **Getting Started**
+> # Getting Started
 Learn how to set up a new experience with Radiosity Engine.
 
 I highly suggest downloading the sample place file below instead of downloading the required modules.
@@ -50,7 +50,7 @@ The Main script already has Radiosity Engine set up and running with a Radiosity
 
 ---
 
-> **Preparing Lighting Information**
+> # Preparing Lighting Information
 Learn how to add parts to render and lights to influence your scene.
 
 Before baking anything, you need to include all the parts you want to render. Because Radiosity renders lighting on individual surfaces of parts, you need to apply lightmaps to the specific surfaces of each part you want to render.
@@ -82,7 +82,7 @@ Additionally, lights are treated as volumes rather than points. This means light
 
 ---
 
->**Lighting Features**
+> # Lighting Features
 Learn how to use the different rendering options supported!
 
 Each Radiosity Manager contains a few core properties that can be modified to achieve different results.
@@ -122,7 +122,7 @@ Here is a table comparing the lighting results between random and uniform light 
 
 ---
 
->**Baking Lights**
+> # Baking Lights
 Learn how to render lighting information into your scene.
 
 After you've prepared the lighting information for your scene, you're ready to bake! The process I'll describe below is optimized for Parallel Luau and is separated into sections. The example place file includes the full implementation.
