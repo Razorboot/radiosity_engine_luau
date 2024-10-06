@@ -40,7 +40,7 @@ An example scene is already set up for you inside the ``"Geometry"`` folder in W
 The Modules folder contains the Radiosity ``"Manager"`` class, which allows you to create a new container to render a specific part of your scene. For example, if you have an open area in your experience that doesn't have many shadows and another area that has many shadow-casting objects, you can render lighting at a lower resolution for the open area, and use a higher resolution for the closed area. By using Managers, you can split the scene up into two containers with different properties. The Main script communicates directly with Radiosity Managers to bake lighting in your experience.
 
 You can create a new Radiosity Manager by including the ``"Manager"`` module and instancing a new Manager:
-```
+```lua
 local RadiosityEngine = ServerScriptService:WaitForChild("RadiosityEngine")
 local RadiosityEngineManager = require(RadiosityEngine:WaitForChild("Manager"))
 MyRadiosityManager = RadiosityEngineManager:new( script )
