@@ -1,4 +1,4 @@
-![radiosity_engine_thumbnail (2)|690x247](upload://zBwxzJT8MSINT5Kgzw7w97rYZkX.png)
+![radiosity_engine_thumbnail (2)](https://github.com/user-attachments/assets/799b9deb-e56b-40b9-852b-b8c26359568b)
 
 ❗NOTICE
 ---
@@ -33,8 +33,7 @@ There are also a few limitations to keep in mind, which I will explain in depth 
 > **Getting Started**
 Learn how to set up a new experience with Radiosity Engine.
 
-I highly suggest downloading the sample place file below instead of downloading the required modules: 
-[radiosity_engine_9-10-24_01.rbxl|attachment](upload://vdYROaYZEInlAdlhekdWvhELMep.rbxl) (234.7 KB)
+I highly suggest downloading the sample place file below instead of downloading the required modules.
 
 An example scene is already set up for you inside the ``"Geometry"`` folder in Workspace. Currently, Radiosity Engine is split into two parts, the ``"Modules"`` folder and the ``"Main"`` script.
 
@@ -79,7 +78,7 @@ Additionally, lights are treated as volumes rather than points. This means light
 
 ---
 
-![Group 34 (1)|690x434](upload://ksHVPb4HEsptMJWZ79QGJCOHdYu.png)
+![Group 34 (1)](https://github.com/user-attachments/assets/9207886a-7ca7-44f0-a7c0-b08bff3b2a15)
 
 ---
 
@@ -105,10 +104,10 @@ A reasonable optimization to achieve faster global illumination in your experien
 
 Take a look at the comparison below of using this method compared to strictly using Roblox's default shadow map lighting!
 
-![Group 41|690x262](upload://C3N7ooMv9wQex3Q9kWHYnX6ayk.png)
+![Group 41](https://github.com/user-attachments/assets/0cd8f0d8-d4da-4da4-a8dd-acd8db225369)
 
 Mixing Direct and Indirect lighting with Voxel Lighting yields the best results:
-![Group 42 (1)|690x412](upload://tZOf79tLBM0htfr0DwhoVmsmZ4B.png)
+![Group 42 (1)](https://github.com/user-attachments/assets/4b48c19e-1e34-4d15-8cc1-8dc0fb2c856d)
 
 + ``MyRadiosityManager.SunRadius = [number between 0 - 1]`` toggles how smooth shadows casted by the sun are. A higher value means shadows will appear softer and blurrier, while lower values produce sharper shadows.
 
@@ -119,7 +118,7 @@ Mixing Direct and Indirect lighting with Voxel Lighting yields the best results:
 ❗ Both random light sampling and uniform hemisphere sampling come with advantages and drawbacks. Uniform hemisphere sampling eliminates noise, but creates banding artifacts when the ``samplesPerPixel`` value is too low. Random light sampling on the other hand eliminates banding, but creates noise if ``samplesPerPixel`` is too low.
 
 Here is a table comparing the lighting results between random and uniform light sampling:
-![Group 38 (1)|690x371](upload://8AfOtG9Oat7z2sfbHLdejwpZT1T.png)
+![Group 38 (1)](https://github.com/user-attachments/assets/35d517c1-1ffa-4877-a6a9-2d902e730721)
 
 ---
 
