@@ -16,7 +16,15 @@
 ---
 This is a WIP experimental lighting framework that takes full advantage of Roblox's Editable Image instance. This means lighting is calculated separately from Roblox's in-house lighting engine by using a light transport simulation. As a result, you can use this engine to add to Roblox's existing lighting, or render a scene using only baked lighting! Changes are still being made to Editable Image, so expect updates as Roblox rolls out the feature!
 
-**If you use the place file, run the game from the "Run" execution**. This is because EditableImage beta does not support Server to Client replication yet, but will likey be rolled out with the official release of EditableImage!
+**If you use the place file, run the game from the "Run" execution.**
+This is because EditableImage beta does not support Server to Client replication yet, but will likey be rolled out with the official release of EditableImage!
+[Upl6216
+RobloxStudioBeta
+MSI
+1d7bc900-d8de-4a4b-9ae2-93e001968e5a
+
+oading radiosity_engine_9-13-24_01.rbxl.lock…]()
+
 ---
 
 > # Introduction
