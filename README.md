@@ -16,6 +16,7 @@
 ---
 This is a WIP experimental lighting framework that takes full advantage of Roblox's Editable Image instance. This means lighting is calculated separately from Roblox's in-house lighting engine by using a light transport simulation. As a result, you can use this engine to add to Roblox's existing lighting, or render a scene using only baked lighting! Changes are still being made to Editable Image, so expect updates as Roblox rolls out the feature!
 
+**If you use the place file, run the game from the "Run" execution**. This is because EditableImage beta does not support Server to Client replication yet, but will likey be rolled out with the official release of EditableImage!
 ---
 
 > # Introduction
@@ -46,6 +47,7 @@ There are also a few limitations to keep in mind, which I will explain in depth 
 Learn how to set up a new experience with Radiosity Engine.
 
 I highly suggest downloading the sample place file below instead of downloading the required modules.
+**If you use the place file, run the game from the "Run" execution**. This is because EditableImage beta does not support Server to Client replication yet, but will likely be rolled out with the official release of EditableImage!
 
 An example scene is already set up for you inside the ``"Geometry"`` folder in Workspace. Currently, Radiosity Engine is split into two parts, the ``"Modules"`` folder and the ``"Main"`` script.
 
