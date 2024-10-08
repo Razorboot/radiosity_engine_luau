@@ -49,7 +49,7 @@ There are also a few limitations to keep in mind, which I will explain in depth 
 ---
 
 > # Getting Started
-Learn how to set up a new experience with Radiosity Engine.</mark>
+> Learn how to set up a new experience with Radiosity Engine.
 
 I highly suggest downloading the sample place file below instead of downloading the required modules.
 **If you use the place file, run the game from the "Run" execution**. This is because EditableImage beta does not support Server to Client replication yet, but will likely be rolled out with the official release of EditableImage!
