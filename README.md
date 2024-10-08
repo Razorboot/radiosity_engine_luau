@@ -18,12 +18,8 @@ This is a WIP experimental lighting framework that takes full advantage of Roblo
 
 **If you use the place file, run the game from the "Run" execution.**
 This is because EditableImage beta does not support Server to Client replication yet, but will likey be rolled out with the official release of EditableImage!
-[Upl6216
-RobloxStudioBeta
-MSI
-1d7bc900-d8de-4a4b-9ae2-93e001968e5a
 
-oading radiosity_engine_9-13-24_01.rbxl.lock…]()
+![image](https://github.com/user-attachments/assets/fd19c867-30a7-4dcf-b4c3-d38373b2bfaf)
 
 ---
 
