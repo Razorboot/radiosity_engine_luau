@@ -4,7 +4,7 @@
 
 <div align="center">
 
-## Video Showcase of Radiosity Engine:
+> # Video Showcase of Radiosity Engine:
 
 [![Video Demo](https://img.youtube.com/vi/4z33Ls0PmxM/0.jpg)](https://www.youtube.com/watch?v=4z33Ls0PmxM)
 
@@ -13,7 +13,7 @@
 ---
 
 > # Notice
----
+
 - This is a WIP experimental lighting framework that takes full advantage of Roblox's Editable Image instance. This means lighting is calculated separately from Roblox's in-house lighting engine by using a light transport simulation. As a result, you can use this engine to add to Roblox's existing lighting, or render a scene using only baked lighting! Changes are still being made to Editable Image, so expect updates as Roblox rolls out the feature!
 
 - **If you use the place file, run the game from the "Run" execution.**
