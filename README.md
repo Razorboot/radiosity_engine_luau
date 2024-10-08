@@ -144,7 +144,7 @@ Here is a table comparing the lighting results between random and uniform light 
 > # Baking Lights
 **Learn how to render lighting information into your scene.**
 
-==This process can be skipped over if you're using the place file. However, it may be beneficial to understand how the engine works!==
+This process can be skipped over if you're using the place file. However, it may be beneficial to understand how the engine works!
 
 After you've prepared the lighting information for your scene, you're ready to bake! The process I'll describe below is optimized for Parallel Luau and is separated into sections. The example place file includes the full implementation.
 
