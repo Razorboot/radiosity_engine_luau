@@ -14,13 +14,14 @@
 
 > # Notice
 ---
-This is a WIP experimental lighting framework that takes full advantage of Roblox's Editable Image instance. This means lighting is calculated separately from Roblox's in-house lighting engine by using a light transport simulation. As a result, you can use this engine to add to Roblox's existing lighting, or render a scene using only baked lighting! Changes are still being made to Editable Image, so expect updates as Roblox rolls out the feature!
+- This is a WIP experimental lighting framework that takes full advantage of Roblox's Editable Image instance. This means lighting is calculated separately from Roblox's in-house lighting engine by using a light transport simulation. As a result, you can use this engine to add to Roblox's existing lighting, or render a scene using only baked lighting! Changes are still being made to Editable Image, so expect updates as Roblox rolls out the feature!
 
-**If you use the place file, run the game from the "Run" execution.**
+- **If you use the place file, run the game from the "Run" execution.**
 This is because EditableImage beta does not support Server to Client replication yet, but will likey be rolled out with the official release of EditableImage!
 
 ![image](https://github.com/user-attachments/assets/fd19c867-30a7-4dcf-b4c3-d38373b2bfaf)
 
+- **Rendering will pause your game temporarily.** This means it should only be done in Studio. (Later on I will cache the results to draw on client) This is because the engine is using its full capacity to render lighting in parallel with an optimized number of threads.
 ---
 
 > # Introduction
