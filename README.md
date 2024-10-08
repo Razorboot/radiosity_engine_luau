@@ -70,7 +70,7 @@ The Main script already has Radiosity Engine set up and running with a Radiosity
 ---
 
 > # Preparing Lighting Information
-**Learn how to add parts to render and lights to influence your scene.**
+> Learn how to add parts to render and lights to influence your scene.
 
 Before baking anything, you need to include all the parts you want to render. Because Radiosity renders lighting on individual surfaces of parts, you need to apply lightmaps to the specific surfaces of each part you want to render.
 
@@ -102,7 +102,7 @@ Additionally, lights are treated as volumes rather than points. This means light
 ---
 
 > # Lighting Features
-**Learn how to use the different rendering options supported!**
+> Learn how to use the different rendering options supported!
 
 Each Radiosity Manager contains a few core properties that can be modified to achieve different results.
 + ``MyRadiosityManager.NarrowSurfacePatchScale = [number]`` sets the pixel resolution for each patch. By default, the pixel resolution is 32, which means each patch contains 32x32 pixels.
@@ -142,7 +142,7 @@ Here is a table comparing the lighting results between random and uniform light 
 ---
 
 > # Baking Lights
-**Learn how to render lighting information into your scene.**
+> Learn how to render lighting information into your scene.
 
 This process can be skipped over if you're using the place file. However, it may be beneficial to understand how the engine works!
 
