@@ -1,5 +1,6 @@
 ![radiosity_engine_thumbnail (2)](https://github.com/user-attachments/assets/799b9deb-e56b-40b9-852b-b8c26359568b)
-![Video Demo](https://youtu.be/4z33Ls0PmxM)
+[![Video Demo](https://img.youtube.com/vi/4z33Ls0PmxM/0.jpg)](https://www.youtube.com/watch?v=4z33Ls0PmxM)
+
 
 > ## Notice
 ---
