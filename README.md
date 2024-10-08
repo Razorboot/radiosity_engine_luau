@@ -26,7 +26,7 @@ This is because EditableImage beta does not support Server to Client replication
 
 > # Introduction
 
-A year ago I released a custom lighting framework that pre-renders the lighting in your experience. Since then, Roblox has implemented changes to Parallel Luau and added support for low-level image manipulation that enables many improvements in rendering times, performance, and most importantly, quality. This post details a complete rewrite of my lighting framework.
+A few years ago I released a custom lighting framework that pre-renders the lighting in your experience. Since then, Roblox has implemented changes to Parallel Luau and added support for low-level image manipulation that enables many improvements in rendering times, performance, and most importantly, quality. This post details a complete rewrite of my lighting framework.
 
 This release is modeled after a rendering technique called Radiosity Lightmapping, which was popular during the early 2000's to bake lights and shadows and global illumination (indirect lighting) in video-games. 
 
@@ -49,7 +49,7 @@ There are also a few limitations to keep in mind, which I will explain in depth 
 ---
 
 > # Getting Started
-**Learn how to set up a new experience with Radiosity Engine.**
+Learn how to set up a new experience with Radiosity Engine.</mark>
 
 I highly suggest downloading the sample place file below instead of downloading the required modules.
 **If you use the place file, run the game from the "Run" execution**. This is because EditableImage beta does not support Server to Client replication yet, but will likely be rolled out with the official release of EditableImage!
