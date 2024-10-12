@@ -4,11 +4,17 @@
 
 ---
 
-<div align="center">
+<div style="width:100vw; height:100vh; display:flex; justify-content:center; align-items:center;">
 
-> # Video Showcase of Radiosity Engine:
+  <div align="center" style="width:100%;">
 
-[![Video Demo](https://img.youtube.com/vi/4z33Ls0PmxM/0.jpg)](https://www.youtube.com/watch?v=4z33Ls0PmxM)
+    <h1>Video Showcase of Radiosity Engine:</h1>
+
+    <a href="https://www.youtube.com/watch?v=4z33Ls0PmxM">
+      <img src="https://img.youtube.com/vi/4z33Ls0PmxM/0.jpg" style="width:100%; max-height:100vh;" alt="Video Demo">
+    </a>
+
+  </div>
 
 </div>
 
