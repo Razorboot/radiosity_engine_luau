@@ -1,3 +1,5 @@
+---
+
 ![radiosity_engine_thumbnail (2)](https://github.com/user-attachments/assets/799b9deb-e56b-40b9-852b-b8c26359568b)
 
 ---
@@ -14,10 +16,14 @@
 
 > # Notice
 
-- This is an early WIP experimental lighting framework that takes full advantage of Roblox's Editable Image instance. This means lighting is calculated separately from Roblox's in-house lighting engine by using a light transport simulation. As a result, developers can enjoy the flexibility of high quality baked lighting at a low performance cost. Additionally, you use this rendering engine to add to Roblox's existing lighting, or render a scene using strictly baked lighting! Changes are still being made to Editable Image, so expect updates as Roblox rolls out the feature!
+- This is an early WIP experimental lighting framework that takes full advantage of Roblox's Editable Image instance. This means lighting is calculated separately from Roblox's in-house lighting engine by using a light transport simulation. As a result, developers can enjoy the flexibility of high-quality baked lighting at a low performance cost. Additionally, you can use this rendering engine to add to Roblox's existing lighting or render a scene using strictly baked lighting! Changes are still being made to Editable Image, so expect updates as Roblox rolls out the feature!
+
+- The github repository can be found [here](https://github.com/Razorboot/radiosity_engine_luau/tree/main).
+
+- Make sure you have the necessary **Studio Beta Settings** enabled! (EditableImage, Parallel Luau). If you receive errors, it may also be that too many threads are being executed at once. This can be modified in the ``Main`` script inside of ``ServerScriptService``. More information about this can be found in the [Baking Lights section](#baking-lights).
 
 - **If you use the place file, run the game from the "Run" execution.**
-This is because EditableImage beta does not support Server to Client replication yet, but will likey be rolled out with the official release of EditableImage!
+This is because EditableImage beta does not support Server to Client replication yet, but will likely be rolled out with the official release of EditableImage!
 
 ![image](https://github.com/user-attachments/assets/fd19c867-30a7-4dcf-b4c3-d38373b2bfaf)
 
@@ -28,7 +34,7 @@ This is because EditableImage beta does not support Server to Client replication
 
 A few years ago I released a custom lighting framework that pre-renders the lighting in your experience. Since then, Roblox has implemented changes to Parallel Luau and added support for low-level image manipulation that enables many improvements in rendering times, performance, and most importantly, quality. This post details a complete rewrite of my lighting framework.
 
-This release is modeled after a rendering technique called Radiosity Lightmapping, which was popular during the early 2000's to bake lights and shadows and global illumination (indirect lighting) in video-games. 
+This release is modeled after a rendering technique called Radiosity Lightmapping, which was popular during the early 2000s to bake lights and shadows and global illumination (indirect lighting) in video games. 
 
 Instead of having your GPU calculate lighting for every pixel on the screen in real-time, radiosity is a pre-rendered, world-space technique that isn't limited to performance issues inherent to real-time rendering. As a result, radiosity can afford intensive light calculations such as raytracing, soft shadows, and indirect illumination regardless of hardware limitations.
 
@@ -126,9 +132,11 @@ Take a look at the comparison below of using this method compared to strictly us
 ![Group 41](https://github.com/user-attachments/assets/0cd8f0d8-d4da-4da4-a8dd-acd8db225369)
 
 Mixing Direct and Indirect lighting with Voxel Lighting yields the best results:
-![Group 42 (1)](https://github.com/user-attachments/assets/4b48c19e-1e34-4d15-8cc1-8dc0fb2c856d)
+![Group 42 (
 
-+ ``MyRadiosityManager.SunRadius = [number between 0 - 1]`` toggles how smooth shadows casted by the sun are. A higher value means shadows will appear softer and blurrier, while lower values produce sharper shadows.
+1)](https://github.com/user-attachments/assets/4b48c19e-1e34-4d15-8cc1-8dc0fb2c856d)
+
++ ``MyRadiosityManager.SunRadius = [number between 0 - 1]`` toggles how smooth shadows cast by the sun are. A higher value means shadows will appear softer and blurrier, while lower values produce sharper shadows.
 
 + ``MyRadiosityManager.SamplesPerPixel = [number]`` sets how many sample rays are fired per pixel. This allows Radiosity Engine to gather information about the scene around the pixel. Setting SamplesPerPixel too high can result in lag because more rays are fired per pixel.
 
