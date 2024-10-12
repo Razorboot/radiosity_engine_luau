@@ -135,9 +135,7 @@ Take a look at the comparison below of using this method compared to strictly us
 ![Group 41](https://github.com/user-attachments/assets/0cd8f0d8-d4da-4da4-a8dd-acd8db225369)
 
 Mixing Direct and Indirect lighting with Voxel Lighting yields the best results:
-![Group 42 (
-
-1)](https://github.com/user-attachments/assets/4b48c19e-1e34-4d15-8cc1-8dc0fb2c856d)
+![Group 42 (1)](https://github.com/user-attachments/assets/4b48c19e-1e34-4d15-8cc1-8dc0fb2c856d)
 
 + ``MyRadiosityManager.SunRadius = [number between 0 - 1]`` toggles how smooth shadows cast by the sun are. A higher value means shadows will appear softer and blurrier, while lower values produce sharper shadows.
 
