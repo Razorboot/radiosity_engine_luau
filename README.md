@@ -51,10 +51,10 @@ There are also a few limitations to keep in mind, which I will explain in depth 
 > # Getting Started
 > Learn how to set up a new experience with Radiosity Engine.
 
-I highly suggest downloading the sample place file from the github repository
+I highly suggest downloading the sample place file from the [repository]([url](https://github.com/Razorboot/radiosity_engine_luau/blob/main/radiosity_engine_9-13-24_01.rbxl)).
 **If you use the place file, run the game from the "Run" execution**. This is because EditableImage beta does not support Server to Client replication yet, but will likely be rolled out with the official release of EditableImage!
 
-An example scene is already set up for you inside the ``"Geometry"`` folder in Workspace. Currently, Radiosity Engine is split into two parts, the ``"Modules"`` folder and the ``"Main"`` script.
+An example scene is already set up for you inside the ``"Geometry"`` folder in ``Workspace``. Currently, Radiosity Engine is split into two parts, the ``"Modules"`` folder and the ``"Main"`` script.
 
 The Modules folder contains the Radiosity ``"Manager"`` class, which allows you to create a new container to render a specific part of your scene. For example, if you have an open area in your experience that doesn't have many shadows and another area that has many shadow-casting objects, you can render lighting at a lower resolution for the open area, and use a higher resolution for the closed area. By using Managers, you can split the scene up into two containers with different properties. The Main script communicates directly with Radiosity Managers to bake lighting in your experience.
 
