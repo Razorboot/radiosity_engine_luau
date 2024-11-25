@@ -1,10 +1,13 @@
 --# Point
-local Canvas = {}
+local Canvas = {
+	Patches = {}
+}
 Canvas.__index = Canvas
 
 
 --# Services
 local Lighting = game:GetService("Lighting")
+local Asset = game:GetService("AssetService")
 
 
 --# Include
@@ -22,7 +25,7 @@ local vec2, cf, vec3, udim2, c3, mr, mp, sqrt, abs, vec3FromNormalId = Vector2.n
 function Canvas:new(myRadiosityManager)
 	local newCanvas = {
 		SurfaceGui = Instance.new("SurfaceGui"),
-		SurfaceImage = Instance.new("EditableImage"),
+		SurfaceImage = Asset:CreateEditableImage(),
 		BroadSurfacePatches = {},
 		
 		NarrowSurfacePatches = {},
@@ -133,10 +136,11 @@ function Canvas:createSurfacePatches()
 			SurfaceImageLabel.Parent = self.SurfaceGui
 			SurfaceImageLabel.ResampleMode = Enum.ResamplerMode.Default
 			
-			local EditableImage = Instance.new("EditableImage")
-			EditableImage.Name = "NarrowSurfacePatch"
-			EditableImage.Size = vec2(self.CurrentRadiosityManager.NarrowSurfacePatchScale, self.CurrentRadiosityManager.NarrowSurfacePatchScale)
-			EditableImage.Parent = SurfaceImageLabel
+			local EditableImage = Asset:CreateEditableImage({
+				Size = vec2(self.CurrentRadiosityManager.NarrowSurfacePatchScale, self.CurrentRadiosityManager.NarrowSurfacePatchScale)
+			})
+			Canvas.Patches[SurfaceImageLabel] = EditableImage
+			SurfaceImageLabel.ImageContent = Content.fromObject(EditableImage)
 			
 			local worldCF = TopologyHelper.calculateBroadPatchWorldPosition(self.SurfaceGui, SurfaceImageLabel, self.Part, self.Surface, self.PartCornerCF)
 			SurfaceImageLabel:SetAttribute("WorldCFrame", worldCF)

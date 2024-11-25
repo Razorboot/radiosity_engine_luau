@@ -171,7 +171,7 @@ function Manager:getRenderInfo(canvas, BroadPatch, xPixel)
 	MyRadiosityManager.PixelSamplesScale, MyRadiosityManager.RayDistance,
 	canvas.Surface, canvas.PartRotationCF, MyRadiosityManager.BakeGlobalLights,
 	MyRadiosityManager.BakeLocalLights, MyRadiosityManager.NarrowToBroadFactor,
-	BroadPatch.NarrowSurfacePatch, BroadPatch:GetAttribute("WorldCFrame"),
+	Canvas.Patches[BroadPatch], BroadPatch:GetAttribute("WorldCFrame"),
 	MyRadiosityManager.Lights, MyRadiosityManager.RandomLightSamplingEnabled,
 	MyRadiosityManager.SunRadius, MyRadiosityManager.PixelToWorldFactor,
 	canvas.WorldSpaceNormal, MyRadiosityManager.PixelOffset,
