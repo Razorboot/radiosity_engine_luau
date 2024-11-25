@@ -59,7 +59,7 @@ There are also a few limitations to keep in mind, which I will explain in depth 
 > # Getting Started
 > Learn how to set up a new experience with Radiosity Engine.
 
-I highly suggest downloading the sample place file from the [github repository](https://github.com/Razorboot/radiosity_engine_luau/blob/main/radiosity_engine_9-13-24_01.rbxl).
+I highly suggest downloading the sample place file from the [github repository](https://github.com/Razorboot/radiosity_engine_luau/blob/main/radiosity_engine_11-25-24.rbxl).
 **If you use the place file, run the game from the "Run" execution**. This is because EditableImage beta does not support Server to Client replication yet, but will likely be rolled out with the official release of EditableImage!
 
 An example scene is already set up for you inside the ``"Geometry"`` folder in ``Workspace``. Currently, Radiosity Engine is split into two parts, the ``"Modules"`` folder and the ``"Main"`` script.
